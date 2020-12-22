@@ -1,1 +1,0 @@
-que esta merda resulte
