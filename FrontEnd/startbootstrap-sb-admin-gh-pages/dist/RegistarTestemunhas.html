@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Registar Testemunhas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!--nave-->
+    <div class="nave">
+        <nav class="fixed-nav-bar sb-topnav navbar navbar-expand navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href=""> <i class="fas fa-user-shield"></i> Registar Testemunha</a>
+        </nav>
+    </div>
+    <!--div com info-->
+    <div class="pre-scrollable">
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" data-toggle="validator">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Nome</label>
+                                    <input class="form-control" id="nameWitness" type="text" placeholder="Nome"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza o nome" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Naturalidade</label>
+                                    <input class="form-control" id="naturalityWitness" type="text"
+                                        placeholder="Naturalidade" autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a naturalidade" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Data de Nascimento</label>
+                                    <input class="form-control" id="dateWitness" type="date"
+                                        placeholder="Data de Nascimento" autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a data de nascimento" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <label>Sexo</label>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <input type="radio" id="maleWitness" name="sentMessage" value="Masculino" selected
+                                        required>
+                                    Masculino
+                                    <input type="radio" id="femaleWitness" name="sentMessage" value="Feminino" selected
+                                        required>
+                                    Feminino
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Cartão de Cidadão</label>
+                                    <input class="form-control" id="ccWitness" type="number"
+                                        placeholder="Cartão de Cidadão" autocomplete="off" required
+                                        data-validation-required-message="Por favor, Introduza o número de cartão de cidadão." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Contacto</label>
+                                    <input class="form-control" id="phoneWitness" type="phone" placeholder="Contacto"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza o contacto." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Profissão</label>
+                                    <input class="form-control" id="jobWitness" type="text " placeholder="Profissão"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a profissão." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email</label>
+                                    <input class="form-control" id="emailWitness" type="email" placeholder="Email"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza o email." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Morada</label>
+                                    <input class="form-control" id="addressWitness" type="text" placeholder="Morada"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a morada." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Localidade</label>
+                                    <input class="form-control" id="localityWitness" type="text"
+                                        placeholder="Localidade" autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a localidade." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group" align=center><button onsubmit="witnessRegister()"
+                                    class="btn btn-primary btn-xl btn-width " id="registerWitness"
+                                    type="submit" href="DadosOcorrencia.html">Gravar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <footer class="py-4 bg-light mt-auto ">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div>
+                        <div class="row">
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" href="DadosOcorrencia.html"><i
+                                        class="fas fa-arrow-left buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-home buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-user buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="far fa-calendar-check buttons-footer"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

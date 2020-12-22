@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Dados Ocorrência</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+  <!--nav-->
+  <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+        class="far fa-clipboard"></i><a class="navbar-brand">Dados de Ocorrência</a></button>
+  </nav>
+  <!--side bar nav (menu lateral)-->
+  <div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+      <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+          <div class="nav">
+            <div class="sb-sidenav-menu-heading">Dados Complementares:</div>
+            <div class="sb-sidenav-menu-heading">Registos</div>
+            <a class="nav-link" href="RegistarVitimas.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Registar Vitimas
+            </a>
+            <a class="nav-link" href="RegistarTestemunhas.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Registar Testemunhas
+            </a>
+            <a class="nav-link" href="RegistarSuspeitos.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Registar Suspeitos
+            </a>
+            <div class="sb-sidenav-menu-heading">Listas</div>
+            <a class="nav-link" href="ListaVitimas.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Lista Vitimas
+              <div class="sb-sidenav-collapse-arrow"><i class=></i></div>
+            </a>
+            <a class="nav-link" href="ListaTestemunhas.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Lista Testemunhas
+            </a>
+            <a class="nav-link" href="ListaSuspeitos.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Lista Suspeitos
+            </a>
+            <div class="sb-sidenav-menu-heading">Outras Informações</div>
+            <a class="nav-link" href="Avaliacoes.html">
+              <div class="sb-nav-link-icon"><i class="far fa-dot-circle"></i></div>
+              Avaliações
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <br>
+  <!--div com info-->
+  <div id="layoutSidenav_content">
+    <main>
+      <div class="container">
+        <div class="card-body-page container">
+          <form>
+            <div class="form-group">
+              <label class="" for="">ID Ocorência</label>
+              <input class="form-control py-4" id="" type="" readonly placeholder="8989" />
+            </div>
+            <div class="form-group">
+              <label class="" for="">Local</label>
+              <input class="form-control py-4" id="" type="" readonly placeholder="local" />
+            </div>
+            <div class="form-group">
+              <label class="" for="">Data/Hora</label>
+              <input class="form-control py-4" id="" type="" readonly placeholder="time" />
+            </div>
+            <div class="form-group">
+              <label class="" for="">Equipa</label>
+              <input class="form-control py-4" id="" type="" readonly placeholder="*Equipa garra*" />
+            </div>
+            <br>
+            <div class="text-center">
+              <a class="btn btn-primary btn-width" onclick="occurrenceEnding()">Finalizar Ocorrência</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+    <footer class="py-4 bg-light mt-auto ">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div>
+            <div class="row">
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="fas fa-arrow-left buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="fas fa-home buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="fas fa-user buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="far fa-calendar-check buttons-footer"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

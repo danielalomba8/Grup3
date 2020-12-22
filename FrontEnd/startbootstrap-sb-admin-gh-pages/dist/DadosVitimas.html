@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dados Vítimas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Nave-->
+    <div class="nave">
+        <nav class="fixed-nav-bar sb-topnav navbar navbar-expand navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href=""> <i class="fas fa-user-injured"></i> Dados de Vítima</a><button
+                class="navbar-nav ml-auto ml-md-0 btn2 btn-link btn-sm order-1 order-lg-0 navbar-right"
+                id="guardarVitima" style="display: none;" onclick="saveVictim()"><i
+                    class="far fa-check-circle"></i></button>
+        </nav>
+    </div>
+    <!--div com info-->
+    <div class="pre-scrollable">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label class="" for="">ID Vitima</label>
+                    <input class="form-control py-4" readonly id="idVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Nome</label>
+                    <input class="form-control py-4" readonly id="nomeVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Sexo</label>
+                    <input class="form-control py-4" readonly id="sexoVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Naturalidade</label>
+                    <input class="form-control py-4" readonly id="naturalidadeVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Cartão de Cidadão</label>
+                    <input class="form-control py-4" readonly id="ccVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Data de Nascimento</label>
+                    <input class="form-control py-4" readonly id="dataVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Contacto</label>
+                    <input class="form-control py-4" readonly id="contactoVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Profissão</label>
+                    <input class="form-control py-4" readonly id="profissaoVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Email</label>
+                    <input class="form-control py-4" readonly id="emailVitima" type="email" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Morada</label>
+                    <input class="form-control py-4" readonly id="moradaVitima" type="" />
+                </div>
+                <div class="form-group">
+                    <label class="" for="">Localidade</label>
+                    <input class="form-control py-4" readonly id="localidadeVitima" type="" />
+                </div> <br>
+                <div align=center>
+                    <button class="btn btn-primary btn-xl" id="" type="button" onclick="enableEditionVictim()"><i
+                            class="far fa-edit"></i> Editar</button>
+                    <button class="btn btn-primary btn-xl" id="" type="button" onclick="erraseVictim()"><i
+                            class="far fa-trash-alt"></i>
+                        Apagar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <footer class="py-4 bg-light mt-auto ">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div>
+                        <div class="row">
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" href="ListaVitimas.html"><i
+                                        class="fas fa-arrow-left buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-home buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-user buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="far fa-calendar-check buttons-footer"></i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

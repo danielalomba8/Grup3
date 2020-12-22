@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Dados Suspeitos</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+    <!--SweatAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Nav-->
+  <div class="nave">
+    <nav class="fixed-nav-bar sb-topnav navbar navbar-expand navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href=""> <i class="fas fa-user-secret"></i> Dados de Suspeito</a>
+      <button class="navbar-nav ml-auto ml-md-0 btn2 btn-link2 btn-sm order-1 order-lg-0" id="guardarSuspeito"
+        style="display: none;" onclick="EditSuspect()"><i class="far fa-check-circle"></i></button>
+    </nav>
+  </div>
+  <!--div com inf-->
+  <div class="pre-scrollable">
+    <div class="container">
+     <!-- <form method="POST">-->
+        <div class="form-group">
+          <label class="" for="">ID Suspeito</label>
+          <input class="form-control py-4" id="idSuspeito" readonly/>
+        </div>
+        <div class="form-group">
+          <label class="" for="">Nome</label>
+          <input class="form-control py-4"  id="nomeSuspeito" value="" readonly/>
+        </div>
+        <div class="form-group">
+          <label class="" for="">Naturalidade</label>
+          <input class="form-control py-4" readonly id="naturalidadeSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Sexo</label>
+          <input class="form-control py-4" readonly id="sexoSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Cartão de Cidadão</label>
+          <input class="form-control py-4" readonly id="ccSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Profissão</label>
+          <input class="form-control py-4" readonly id="profissaoSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Cor de pele</label>
+          <input class="form-control py-4" readonly id="peleSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Cor dos olhos</label>
+          <input class="form-control py-4" readonly id="olhosSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Cor de cabelo</label>
+          <input class="form-control py-4" readonly id="cabeloSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Altura</label>
+          <input class="form-control py-4" readonly id="alturaSuspeito" type="" />
+        </div>
+        <div class="form-group">
+          <label class="" for="">Formato do corpo</label>
+          <input class="form-control py-4" readonly id="corpoSuspeito" type="" />
+        </div>
+        <br>
+        <div align=center>
+          <button class="btn btn-primary btn-xl" id="" type="button" onclick="enableEditionSuspect()"><i
+              class="far fa-edit"></i> Editar</button>
+          <button class="btn btn-primary btn-xl" id="" type="button" onclick="DeleteSuspect()"><i
+              class="far fa-trash-alt"></i>
+            Apagar</button>
+        </div>
+      <!--</form>-->
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <footer class="py-4 bg-light mt-auto ">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div>
+            <div class="row">
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" href="ListaSuspeitos.html"><i
+                    class="fas fa-arrow-left buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="fas fa-home buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="fas fa-user buttons-footer"></i></a>
+              </div>
+              <div>
+                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                    class="far fa-calendar-check buttons-footer"></i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/scripts.js"></script>
+  <script src="js/fetchDadosSuspeitos.js"></script>
+  <script src="js/fetchDeleteSuspect.js"></script>
+  <script src="js/fetchEditarSuspeitos.js"></script>
+
+</body>
+
+</html>

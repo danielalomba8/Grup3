@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Registar Vítimas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!--nave-->
+    <div class="nave">
+        <nav class="fixed-nav-bar sb-topnav navbar navbar-expand navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href=""> <i class="fas fa-user-injured"></i> Registar Vítima</a>
+        </nav>
+    </div>
+    <!-- Contact Section-->
+    <div class="pre-scrollable">
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" data-toggle="validator">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Nome</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Nome" required
+                                        autocomplete="off"
+                                        data-validation-required-message="Por favor, introduza o nome" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Naturalidade</label>
+                                    <input required class="form-control" id="natural" type="text"
+                                        placeholder="Naturalidade" autocomplete="off"
+                                        data-validation-required-message="Por favor, introduza a naturalidade" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Data de Nascimento</label>
+                                    <input class="form-control" id="date" type="date" placeholder="Data de Nascimento"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a data de nascimento" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <label>Sexo</label>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <input type="radio" id="male" name="sentMessage" value="Masculino" selected
+                                        required>
+                                    Masculino
+                                    <input type="radio" id="female" name="sentMessage" value="Feminino" selected
+                                        required>
+                                    Feminino
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Cartão de Cidadão</label>
+                                    <input class="form-control" id="cc" type="text" placeholder="Cartão de Cidadão"
+                                        required autocomplete="off"
+                                        data-validation-required-message="Por favor, Introduzir número de cartão de cidadão." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Contacto</label>
+                                    <input class="form-control" id="phone" type="phone" placeholder="Contacto"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza o contacto." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Profissão</label>
+                                    <input class="form-control" id="job" type="text " placeholder="Profissão"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a profissão." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Email"
+                                        autocomplete="off"
+                                        data-validation-required-message="Por favor, introduza o email." required />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Morada</label>
+                                    <input class="form-control" id="address" type="text" placeholder="Morada"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a morada." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Localidade</label>
+                                    <input class="form-control" id="local" type="text" placeholder="Localidade"
+                                        autocomplete="off" required
+                                        data-validation-required-message="Por favor, introduza a localidade." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="form-group" align=center><button onsubmit="victimRegister()"
+                                    class="btn btn-primary btn-xl btn-width" id="sendMessageButton"
+                                    type="submit">Gravar</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <footer class="py-4 bg-light mt-auto ">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div>
+                        <div class="row">
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" href="DadosOcorrencia.html"><i
+                                        class="fas fa-arrow-left buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-home buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="fas fa-user buttons-footer"></i></a>
+                            </div>
+                            <div>
+                                <a class="btn btn-link btn-sm2 order-1 order-lg-0" onclick="cantGo()"><i
+                                        class="far fa-calendar-check buttons-footer"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
