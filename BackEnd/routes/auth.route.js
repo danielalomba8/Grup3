@@ -1,5 +1,7 @@
-const authController = require('../controllers/auth.controller.js');
+const router = require('express').Router();
+const userController = require('../controllers/auth.controller.js');
 
 module.exports = function(app, passport) {
-    // code here
+    router.get('/',userController.getUser);
 }
+

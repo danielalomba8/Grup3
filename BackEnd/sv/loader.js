@@ -1,6 +1,5 @@
 //Módulos necessários ao servidor
 const app = require ('./server.js');
-const router = require ('../routes/main.route.js');
 const cookieParser = require('cookie-parser');
 const passport = require('passport');
 const session = require ('express-session');
@@ -44,8 +43,6 @@ app.use(function(req, res, next) {
 //Sincronização dos models com a BD
 app.use(passport.initialize());
 app.use(passport.session()); // sessões de login persistentes
-require('../routes/auth.route.js') (app, passport);
-require('../config/passport/passport.js') (passport, models.user);
 
 /*
 models.sequelize.sync().then(function() {
@@ -57,8 +54,16 @@ models.sequelize.sync().then(function() {
 
 
 //Forçar a utilização do router e a exportação da app
-app.use('/', router);
+
+
+
+//const auth = require('../routes/auth.route.js') (app, passport);
+//require('../config/passport/passport.js') (passport, models.user);
+
+
+const suspectRouter = require("../routes/suspects.route");
+app.use("/suspects", suspectRouter);
+
+//app.use('/users', auth);
+
 module.exports = app;
-
-
-
